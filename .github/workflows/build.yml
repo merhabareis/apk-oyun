@@ -32,7 +32,7 @@ jobs:
     - name: Install Buildozer and Dependencies
       run: |
         pip install --upgrade pip
-        pip install --upgrade buildozer Cython==0.29.36 virtualenv
+        pip install --upgrade buildozer Cython virtualenv
 
     - name: Build APK
       run: |
