@@ -27,6 +27,12 @@ orientation = portrait
 # (bool) Indicate if the application should be fullscreen or not
 fullscreen = 0
 
+# (int) Target Android API, should be as high as possible.
+android.api = 33
+
+# (bool) Automatically accept SDK license
+android.accept_sdk_license = True
+
 # (str) Android NDK version to use
 android.ndk = 25b
 
