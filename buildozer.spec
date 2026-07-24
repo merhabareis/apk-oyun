@@ -19,7 +19,7 @@ source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 
 # (list) Application requirements
-requirements = python3,pygame
+requirements = python3,pygame==2.6.0
 
 # (list) Supported orientations
 orientation = portrait
