@@ -17,16 +17,8 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install Buildozer and dependencies
-      run: |
-        sudo apt update
-        sudo apt install -y git zip unzip openjdk-17-jdk autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
-        pip install --upgrade pip
-        pip install buildozer Cython==0.29.36
-
     - name: Build with Buildozer
       uses: ArtemSBulgakov/buildozer-action@v1
-      id: buildozer
       with:
         command: buildozer -v android debug
         buildozer_version: master
